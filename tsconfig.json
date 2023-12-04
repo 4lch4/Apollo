@@ -21,9 +21,8 @@
 
     "baseUrl": "./src",
     // "paths": {
-    // 	"@interfaces/*": ["interfaces/*"],
+    // 	"~/*": ["*"],
     // },
-
 
     "skipLibCheck": true,
     "jsx": "react-jsx",
