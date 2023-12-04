@@ -1,0 +1,50 @@
+{
+  "name": "@4lch4/apollo-api",
+  "displayName": "Apollo API",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": ["4lch4"],
+  "homepage": "https://github.com/4lch4/Apollo-API",
+  "bugs": {
+    "email": "bugs@4lch4.email",
+    "url": "https://github.com/4lch4/Apollo-API/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/4lch4/.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "4lch4",
+    "email": "hey@4lch4.email",
+    "url": "https://4lch4.com"
+  },
+  "type": "module",
+  "exports": "./dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./src/index.d.ts",
+  "scripts": {
+    "start": "bun run dist/index.js",
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build ./src/index.ts --target bun --outfile ./dist/index.js",
+    "pretty": "prettier --write .",
+    "lint": "prettier -c .",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@4lch4/backpack": "^1",
+    "elysia": "^0.7.29",
+    "mongodb": "^6.3.0",
+    "p-queue": "^7.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5",
+    "tsc-alias": "^1",
+    "bun-types": "^1",
+    "prettier": "^3",
+    "prettier-plugin-organize-imports": "^3",
+    "prettier-plugin-packagejson": "^2"
+  },
+  "engines": { "node": ">=20" }
+}
